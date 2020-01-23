@@ -17,8 +17,9 @@ $kunde->Name = "Jonas";
 $kunde->Adresse = "Zuhause";
 $kunde->Email = "info@home.de";
 $kunde->Kundennr = "10";
+$kunde->bitchmove ="100%";
 
-echo "$kunde->Name $kunde->Adresse $kunde->Email $kunde->Kundennr"
+echo "$kunde->Name $kunde->Adresse $kunde->Email $kunde->Kundennr $kunde->bitchmove"
 
 ?>
 

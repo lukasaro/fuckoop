@@ -5,7 +5,7 @@
 
 <?php
 
-require("kontakt.php");
+//require("kontakt.php");
 
 class kunde extends kontakt
 {

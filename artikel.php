@@ -1,54 +1,39 @@
 <html>
-
 <head>
-
 <meta charset = "utf=8">
-
 </head>
 
 <?php
 
-Class Kontakt
+Class Artikel
 {
 
 	public $id;
-	public $strasse;
-    public $plz;
-    public $ort;
-    public $email;	
+	public $bezeichnung;
+    public $beschreibung;
+    public $preis;	
 
-	public function __construct($id, $strasse, $plz, $ort, $email)
+	public function __construct($id, $bezeichnung, $beschreibung, $preis)
 	{
 		$this-> id=$id;
-		$this-> strasse=$strasse;
-		$this-> plz=$plz;
-		$this-> ort=$ort;
-        $this-> email=$email;
+		$this-> bezeichnung=$bezeichnung;
+		$this-> beschreibung=$beschreibung;
+		$this-> preis=$preis;
 	}
 
 	public function ausgabe()
 	{
 		echo "ID: ($this-> id)<br>";
-		echo "E-Mail: ($this-> datum)<br>";
+		echo "Bezeichnung: ($this-> bezeichnung)<br>";
+		echo "Beschreibung: ($this-> beschreibung)<br>";
+		echo "Preis: ($this->preis) €<br>";
     } 
-    class Kunde extends Kontakt {
-        private $name;
-        private $vorname;
-
-        public function __construct($id, $name, $vorname, $strasse, $plz, $email)
-    }
-
-
-
+	public function getArtikelBezeichnung()
+	{
+		return $this->bezeichnung;
+	}
 }
 
-																					"getAuftragsausgabe" möglicherweise falsch..
-
-$auftrag1=new Auftrag(1,"8.12.19,",$kunde1->getName(),$artikel=getArtikelBezeichnung(), $auftragsposition=getAuftragsausgabe?()) 
-
-//echo "Aufträge: <br>";
-
-	//$auftrag1->auftragsausgabe();
 
 ?>
 

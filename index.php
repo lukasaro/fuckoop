@@ -13,7 +13,7 @@ class kunde extends kontakt
 }
 
 $kunde = new kunde();
-$kunde->Name = "Lukass";
+$kunde->Name = "Lukas";
 $kunde->Adresse = "Zuhause";
 $kunde->Email = "info@home.de";
 $kunde->Kundennr = "10";
